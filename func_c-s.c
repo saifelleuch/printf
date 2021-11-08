@@ -22,8 +22,8 @@ int pr_string(va_list x)
 	int l;
 	char *str;
 
-	l = _strlen(str);
 	str = va_arg(x, char *);
+	l = _strlen(str);
 	while (i < l)
 	{
 		_putchar(str[i]);

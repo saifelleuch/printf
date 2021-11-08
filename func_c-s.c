@@ -29,7 +29,6 @@ int pr_string(va_list x)
 		_putchar(str[i]);
 		i++;
 	}
-	l--;
 	return (l);
 
 }

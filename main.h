@@ -16,12 +16,12 @@
 typedef struct ops
 {
 	char *op;
-	void (*f)(va_list x);
+	int (*f)(va_list x);
 } op_t;
 
 int _putchar(char c);
 int _strlen(const char *s);
-void pr_char(va_list x);
-void pr_string(va_list x);
+int pr_char(va_list x);
+int pr_string(va_list x);
 int _printf(const char *format, ...);
 #endif

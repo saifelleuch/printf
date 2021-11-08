@@ -3,12 +3,13 @@
 /**
  * _printf - unction that produces output according to a format.
  * @format: list of types of arguments.
- * Return: 0
+ * Return: the number of characters printed
+ * (excluding the null byte used to end output to strings)
  */
 int _printf(const char *format, ...)
 {
 	va_list x;
-	int i = 0, j = 0;
+	int i = 0, j = 0, l = 0;
 	int n;
 	op_t ab[] = {
 		{"c", pr_char},
@@ -26,7 +27,9 @@ int _printf(const char *format, ...)
 		while (ab[j].op != NULL)
 		{
 			if (*ab[j].op == format[i])
-				ab[j].f(x);
+			{
+				l += ab[j].f(x);
+			}
 			j++;
 		}
 		i++;
@@ -35,8 +38,10 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 			i++;
+			l++;
 		}
 	}
+	l--;
 	va_end(x);
-	return (0);
+	return (l);
 }

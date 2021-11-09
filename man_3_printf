@@ -1,0 +1,14 @@
+.TH man "09 Nov 2021" "1.0" "_printf man page"
+.SH NAME
+_printf
+.SH SYNOPSIS
+main.h
+.SH DESCRIPTION
+function that produces output according to a format.
+.SH OPTIONS
+.SH SEE ALSO
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Saif Elleuch, Louay Saidi
+

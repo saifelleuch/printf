@@ -35,7 +35,7 @@ int number_len(int n)
 		m = -m;
 		l++;
 	}
-	while (m > 10)
+	while (m >= 10)
 	{
 		m /= 10;
 		l++;

@@ -39,7 +39,8 @@ int pre_printf(const char *format, va_list x, op_t ab[], int n)
 				if (check == 0)
 				{
 					_putchar('%');
-					_putchar(format[i]); }
+					_putchar(format[i]);
+					l += 2; }
 				i++; }
 
 		}

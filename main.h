@@ -21,5 +21,6 @@ int _putchar(char c);
 int _strlen(const char *s);
 int pr_char(va_list x);
 int pr_string(va_list x);
+int pre_printf(const char *format, va_list x, op_t ab[], int n);
 int _printf(const char *format, ...);
 #endif

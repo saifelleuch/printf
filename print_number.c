@@ -11,7 +11,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		num = -num;
+		num = -n;
 	}
 
 	if ((num / 10) > 0)
@@ -27,14 +27,16 @@ void print_number(int n)
  */
 int number_len(int n)
 {
-	int m = n;
+	unsigned int m;
 	int l = 1;
 
-	if (m < 0)
+	if (n < 0)
 	{
-		m = -m;
+		m = -n;
 		l++;
 	}
+	else
+		m = n;
 	while (m > 10)
 	{
 		m /= 10;

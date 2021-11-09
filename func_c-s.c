@@ -23,6 +23,8 @@ int pr_string(va_list x)
 	char *str;
 
 	str = va_arg(x, char *);
+	if (str == NULL)
+		str = "(null)";
 	l = _strlen(str);
 	while (i < l)
 	{

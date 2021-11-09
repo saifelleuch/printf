@@ -13,6 +13,8 @@ int _printf(const char *format, ...)
 	op_t ab[] = {
 		{"c", pr_char},
 		{"s", pr_string},
+		{"d", pr_int},
+		{"i", pr_int},
 		{NULL, NULL}
 	};
 

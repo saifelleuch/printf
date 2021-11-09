@@ -36,14 +36,14 @@ int pre_printf(const char *format, va_list x, op_t ab[], int n)
 						l += ab[j].f(x);
 						check = 1; }
 					j++; }
-				if (check == 0)
+				if (format[i] == '\0')
+					return (-1);
+				else if (check == 0)
 				{
 					_putchar('%');
 					_putchar(format[i]);
 					l += 2; }
-				i++; }
-
-		}
+				i++; } }
 		if (format[i] != '%' && format[i] != '\0')
 		{
 			_putchar(format[i]);

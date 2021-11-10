@@ -30,6 +30,9 @@ int pr_binary(va_list x);
 void print_unsignedint( unsigned int n);
 int unsigned_len(unsigned int n);
 int pr_unsigned(va_list x);
+int pr_octal(va_list x);
+void print_octal(int n);
+int octal_len(int n);
 int pre_printf(const char *format, va_list x, op_t ab[], int n);
 int _printf(const char *format, ...);
 #endif

@@ -16,6 +16,7 @@ int _printf(const char *format, ...)
 		{"d", pr_int},
 		{"i", pr_int},
 		{"b", pr_binary},
+		{"u", pr_unsigned},
 		{NULL, NULL}
 	};
 

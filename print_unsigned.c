@@ -24,7 +24,7 @@ int unsigned_len(unsigned int n)
 	int l = 1;
 
 
-	while (m > 10)
+	while (m >= 10)
 	{
 		m /= 10;
 		l++;

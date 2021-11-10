@@ -4,7 +4,7 @@
  * print_unsignedint - function that print an unsigned int.
  * @n: number to print.
  */
-void print_unsignedint( unsigned int n)
+void print_unsignedint(unsigned int n)
 {
 	unsigned int num = n;
 
@@ -29,5 +29,5 @@ int unsigned_len(unsigned int n)
 		m /= 10;
 		l++;
 	}
-	return(l);
+	return (l);
 }

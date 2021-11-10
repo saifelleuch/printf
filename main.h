@@ -24,6 +24,9 @@ int pr_string(va_list x);
 int pr_int(va_list x);
 void print_number(int n);
 int number_len(int n);
+void print_binary(int n);
+int binary_len(int n);
+int pr_binary(va_list x);
 int pre_printf(const char *format, va_list x, op_t ab[], int n);
 int _printf(const char *format, ...);
 #endif

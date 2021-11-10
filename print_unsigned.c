@@ -9,7 +9,7 @@ void print_unsignedint( unsigned int n)
 	unsigned int num = n;
 
 	if ((num / 10) > 0)
-		print_unsigned(num / 10);
+		print_unsignedint(num / 10);
 
 	_putchar((num % 10) + 48);
 }

@@ -2,11 +2,13 @@
 .SH NAME
 _printf
 .SH SYNOPSIS
-main.h
+_printf 
+.I FORMAT [ARGUMENT]...
 .SH DESCRIPTION
 function that produces output according to a format.
 .SH OPTIONS
 .SH SEE ALSO
+printf(3)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
